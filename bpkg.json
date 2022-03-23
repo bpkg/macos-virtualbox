@@ -1,0 +1,12 @@
+{
+  "name": "macos-virtualbox",
+  "version": "master",
+  "repos": "myspaghetti/macos-virtualbox",
+  "description": "Push-button installer of macOS on VirtualBox",
+  "install": "install -b macos-guest-virtualbox.sh ${PREFIX:-/usr/local}/bin/macos-guest-virtualbox",
+  "scripts": [ "macos-guest-virtualbox.sh" ],
+  "commands": {
+    "download": "bpkg install $BPKG_NAME"
+  }
+}
+
